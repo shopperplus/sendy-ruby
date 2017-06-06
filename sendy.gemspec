@@ -6,5 +6,7 @@ Gem::Specification.new do |s|
   s.description = "A simple Sendy API"
   s.authors     = ["benko"]
   s.email       = 'benko.b@shopperplus.com'
-  s.files       = ["lib/sendy.rb"]
+  s.files       = ["lib/sendy.rb", "lib/sendy/client.rb"]
+  s.require_paths = ["lib"]
+  s.add_dependency("faraday", "~> 0.12.1")
 end
