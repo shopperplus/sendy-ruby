@@ -1,0 +1,2 @@
+class Sendy
+end
