@@ -1,6 +1,9 @@
+require 'sendy/base'
 require "sendy/client"
+require 'sendy/version'
 
 module Sendy
+
   class << self
 
     def new(sendy_url, api_key = nil)
@@ -8,4 +11,5 @@ module Sendy
     end
 
   end
+
 end
