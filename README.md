@@ -34,7 +34,7 @@ To get active subscriber count of a list:
 
 ```ruby
 > client.active_subscriber_count list_id
-=> 1660
+=> 2
 ```
 
 ### Create Campaign
@@ -42,8 +42,8 @@ To get active subscriber count of a list:
 To create new campaign:
 
 ```ruby
-> client.create_campaign from_name: "demo", from_email: "demo@demo.com", reply_to: "demo@demo.com", subject: "Hello, world", html_text: "<h1>Hello, world</h1>"
-=> Campaign created
+> client.create_campaign from_name: "demo", from_email: "demo@demo.com", reply_to: "demo@demo.com", title: "Hello, world", subject: "Hello, world", html_text: "<h1>Hello, world</h1>", list_ids: "your_list_ids", send_campaign: 1
+=> Campaign created and now sending
 ```
 
 ### For Rails
