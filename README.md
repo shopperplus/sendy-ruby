@@ -48,7 +48,7 @@ To create new campaign:
 
 ### For Rails
 
-create a file name sendy.rb in initializer folder of a Rails application and add below lines to it
+* create a file name sendy.rb in initializer folder of a Rails application and add below lines to it
 
 ```ruby
 require "sendy"
@@ -60,3 +60,11 @@ There're three required parameters
 1. API Endpoint - The URL for Sendy Host.
 2. API Key
 3. One of your Subscriber lists id, The encrypted & hashed ids can be found under View all lists section named ID.
+
+* configure your environment file to use your custom deliver method
+
+add below line to environments/*.rb
+
+```ruby
+config.action_mailer.delivery_method = :sendy
+```
